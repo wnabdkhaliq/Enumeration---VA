@@ -12,7 +12,7 @@ I used the command "nbtstat -a 192.168.0.223" in the Windows command prompt to p
 
 **Challenge 2 - Fast Nmap Scan**
 
-Next, I switched to my Windows machine and used the "nbtstat -a 192.168.0.223" command to perform NetBIOS enumeration on the target. This allowed me to view the NetBIOS Remote Machine Name Table, which confirmed the hostname as METASPLOITABLE and the workgroup as WORKGROUP.
+I used the "nbtstat -a 192.168.0.223" command to perform NetBIOS enumeration on the target. This allowed me to view the NetBIOS Remote Machine Name Table, which confirmed the hostname as METASPLOITABLE and the workgroup as WORKGROUP.
 
 <img width="756" height="625" alt="Challenge 2 - nmap" src="https://github.com/user-attachments/assets/dbf8a914-ecb1-4267-8bd8-b7669aacade1" />
 
