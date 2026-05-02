@@ -1,10 +1,14 @@
 **Enumeration (Walkthrough)**
 
-**Challange 1 - NetBIOS Enumeration**
-
 To start my lab, I accessed the Metasploitable 2 terminal and executed the "ifconfig" command. This allowed me to identify the target machine's network configuration specifically its IPv4 address, which is 192.168.0.223. I also noted the IPv6 link-local address as fe80::a00:27ff:fe94:ba85, ensuring I had the correct target details for both network protocols before proceeding with further enumeration.
 
 <img width="732" height="408" alt="1ifconfig" src="https://github.com/user-attachments/assets/185fe3db-f373-44c0-b463-9873b74ace27" />
+
+**Challange 1 - NetBIOS Enumeration**
+
+I used the command "nbtstat -a 192.168.0.223" in the Windows command prompt to perform NetBIOS enumeration. This command retrieved the NetBIOS Remote Machine Name Table for the target confirming the hostname as METASPLOITABLE and the workgroup as WORKGROUP.
+
+<img width="500" height="450" alt="Challenge 1 - nbtstat" src="https://github.com/user-attachments/assets/5aa6b01f-5000-4088-8cc5-998b4231813f" />
 
 **Challenge 2 - Fast Nmap Scan**
 
