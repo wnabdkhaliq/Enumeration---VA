@@ -12,8 +12,8 @@ I used the command "nbtstat -a 192.168.0.223" in the Windows command prompt to p
 
 **Challenge 2 - Fast Nmap Scan**
 
-I used the "nbtstat -a 192.168.0.223" command to perform NetBIOS enumeration on the target. This allowed me to view the NetBIOS Remote Machine Name Table, which confirmed the hostname as METASPLOITABLE and the workgroup as WORKGROUP.
-
+I executed the command "nmap -F 192.168.0.223" to perform a fast scan of the target's most common ports. The scan revealed numerous open services including FTP (21), SSH (22), Telnet (23) and HTTP (80).
+ 
 <img width="756" height="625" alt="Challenge 2 - nmap" src="https://github.com/user-attachments/assets/dbf8a914-ecb1-4267-8bd8-b7669aacade1" />
 
 **Challenge 3 - DNS Records**
