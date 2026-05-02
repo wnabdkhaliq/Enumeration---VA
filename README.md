@@ -68,7 +68,7 @@ I used the command "nmap -6 -O fe80::a00:27ff:fe94:ba85" to perform a scan and O
 
 <img width="752" height="390" alt="Challenge 27 - IPv6 Discovery" src="https://github.com/user-attachments/assets/8491340d-4519-4886-99ae-1cb403aa7f72" />
 
-Challenge 29 - SMTP Enumeration via Nmap
+**Challenge 29 - SMTP Enumeration via Nmap**
 
 I executed "nmap -p25 --script=smtp-enum-users 192.168.0.223" to attempt to list valid users on the server though the command returned an unhandled status code for the RCPT method. Next, I ran "nmap -p25 --script=smtp-open-relay 192.168.0.223" to check if the server could be used to send unauthorized emails. The results confirmed that the server is not an open relay, indicating that this specific mail vulnerability is not present on the target.
 
